@@ -1,0 +1,316 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+  width: 100%;
+  position: fixed; /* Changed to fixed to make the navbar stick to the top */
+  z-index: 100;
+  top: 0;
+  text-align: center;
+}
+
+.navbar .logo {
+  width: 70px;
+  height: 70px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.pages {
+  display: flex;
+  align-items: center;
+  margin-left: -3px;
+}
+.links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.links li {
+  padding: 0.5em;
+  margin-right: 10px;
+}
+.links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.links li a:hover {
+  color: #d22828;
+}
+.login {
+  /* margin-left: 10px; */
+  border: 1px solid #e63946;
+  background-color: #e63946;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.login a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#offer {
+  background-color: #f7f7f7;
+  padding: 2em;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://placehold.co/600x200?text=offer-image");
+}
+
+.offercheckout {
+  background-color: #333;
+  align-self: flex-end;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+.menu-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f3f0f0;
+}
+.menu-section h2 {
+  font-weight: 700;
+  position: relative;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#menu h2::after {
+  content: "";
+  border: 3px solid red;
+  border-radius: 3px;
+  width: 60px;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+.menu-category {
+  margin: 20px 30px 50px 30px;
+  background-color: #ece7e7d6;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-category h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #e63946;
+  padding-left: 20px;
+}
+
+.cta-button {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 1em 2em;
+  color: white;
+  font-size: 1em;
+}
+
+#viewall {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+#viewall:hover {
+  background-color: #252526;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+}
+.menu-category .menu-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Added to center the grid items */
+}   
+.strike-price {
+  color: rgb(185, 181, 181); /* Set the text color to grey */
+  font-size: 16px;
+  font-weight: 500px;
+}
+.menu-card {
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%; /* Changed from 40% to 100% for better alignment */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu-card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+.menucard-content {
+  padding: 15px;
+}
+.menucard-content h4 {
+  color: #e63946;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+.menucard-content p {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.95em;
+}
+.menucard-content span {
+  font-weight: bold;
+  color: #333;
+}
+
+.footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 40px 20px 20px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1 1 250px;
+  margin: 20px 10px;
+}
+
+.footer-logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-self: center;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #e63946;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #e63946;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links p {
+  margin-bottom: 10px;
+}
+
+.social-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #e63946;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1 1 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #d62828;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+}
+
+.footer-bottom p a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover{
+  color: #e63946;
+}
