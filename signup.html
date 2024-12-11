@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <link href="loginStyle.css" rel="Stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="media/200x80.svg" alt="Shop Logo" class="shop-logo"
+            /></a>
+          </div>
+        </nav>
+      </header>
+      <section class="container">
+        <form class="form-container">
+            <h2>Let us know about you!</h2>
+            <div class="form-body">
+                <label for="fullname"><b>Full Name:</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  id="fullname"
+                  name="fullname"
+                  required
+                />
+                <label for="emailid"><b>Email Address:</b></label>
+                <input
+                  type="email"
+                  placeholder="Enter Your Email Address"
+                  id="emailid"
+                  name="emailaddress"
+                  required
+                />
+                <label for="fullname"><b>Mobile Number:</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Mobile number"
+                  id="fullname"
+                  name="fullname"
+                  required
+                />
+            </div>
+            <button type="submit" class="login-btn" onclick="otp()">Sign Up</button>
+            <p>
+                already our customer?
+                <a href="login.html">Login</a>
+              </p>
+        </form>
+      </section>
+      <script>
+        function otp(){
+            window.location.href="otp.html";
+        }
+      </script>
+</body>
+</html>
