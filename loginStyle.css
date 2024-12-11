@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+  width: 100%;
+  position: fixed; /* Changed to fixed to make the navbar stick to the top */
+  z-index: 100;
+  top: 0;
+  text-align: center;
+}
+.logo {
+  padding: 10px 10px 10px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.navbar .logo img {
+  width: 100%;
+  object-fit: cover;
+  height: 70px;
+}
+
+.container {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgb(0, 0,0,0.3);
+}
+
+h2 {
+    margin-bottom:20px;
+    color:#2d3436;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.otp-form-container {
+    background-color: #fff;  
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgb(0, 0,0,0.3);
+    padding:30px;
+}
+
+.otp-form-container h2{
+    margin-top: 10px;
+}
+.otp-form-container p{
+    margin-bottom: 20px;
+}
+
+.otp-digit {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+    align-content: center;
+}
+.otp-text {
+    width:50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+.otp-text:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.form-body{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+label {
+    display: block;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: #3c3b3ba2;
+}
+
+.form-body input {
+    border-radius: 10px;
+    width:100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dfe6e9;
+    transition: border-color 0.3s ease-in;
+    font-size: 18px;
+}
+input[type="number"]:focus {
+    border-color: black;
+}
+
+button{
+    padding:10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #e63946;
+    color: white;
+    width: 100%;
+    border: 1px solid #e63946;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #c12330;
+}
+
+p{
+    color:#2d3436;
+}
+a {
+    color: rgb(10, 149, 236);
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover{
+    text-decoration:underline;
+}
