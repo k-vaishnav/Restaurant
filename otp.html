@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+    <link href="loginStyle.css" rel="Stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="media/200x80.svg" alt="Shop Logo" class="shop-logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <form class="otp-form-container">
+        <h2>OTP Verification</h2>
+        <p>Enter the 4-digit OTP sent to your registered mobile number.</p>
+        <div class="otp-digit">
+          <input type="text" class="otp-text" maxlength="1"  inputmode="numeric" required>
+          <input type="text" class="otp-text" maxlength="1" required inputmode="numeric">
+          <input type="text" class="otp-text" maxlength="1" required inputmode="numeric">
+          <input type="text" class="otp-text" maxlength="1" required inputmode="numeric">
+        </div>
+        <p>
+          Didn't receive the OTP?
+          <a href="#">Resend OTP</a>
+        </p>
+        <button type="submit" class="login-btn">Verify</button>
+      </form>
+    </section>
+    <script>
+      const otpinput = document.querySelectorAll(".otp-text");
+      otpinput.forEach((inp,index)=>{
+        inp.addEventListener("input",()=>{
+          // console.log("added");
+          if(inp.value.length===1 && index<otpinput.length-1)
+          otpinput[index+1].focus();
+        })
+        inp.addEventListener("keydown",(e)=>{
+          if(e.key === 'Backspace' && inp.value === '' && index > 0)
+          otpinput[index-1].focus();
+        })
+      })
+
+    </script>
+  </body>
+</html>
