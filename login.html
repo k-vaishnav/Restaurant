@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="loginStyle.css" rel="Stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="media/200x80.svg" alt="Shop Logo" class="shop-logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+        <form class="form-container">
+            <h2>Welcome Back!</h2>
+            <div class="form-body">
+                <label for="mobileNumber"><b>Mobile Number:</b></label>
+                <input
+                  type="number"
+                  placeholder="Enter Your Number"
+                  id="MobileNumber"
+                  name="MobileNumber"
+                  required
+                />
+            </div>
+            <button type="button" class="login-btn" onclick="otp()">Login</button>
+            <p>
+                New to our Restaurant?
+                <a href="signup.html">Sign Up</a>
+              </p>
+        </form>
+      </div>
+    </section>
+    <script>
+        function otp(){
+            window.location.href="otp.html";
+        }
+    </script>
+  </body>
+</html>
