@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="menuStyle.css" rel="Stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./media/logo-1933884_640.webp" alt="" />
+        </div>
+        <div class="pages">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="#offers">Our offers</a></li>
+            <li><a href="aboutUs.html">Know us more</a></li>
+            <li><a href="#orders">Your orders</a></li>
+            <li><a href="#cart">Cart(0)</a></li>
+          </ul>
+          <div class="login">
+            <a href="login.html">Login/Sign up</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="menu-heading">
+      <h1>Our Menu</h1>
+    </section>
+    <!-- categories -->
+    <section class="categories-section">
+      <input
+        type="search"
+        name="search"
+        placeholder="What do you want to search..."
+        class="search-input"
+      />
+      <div class="btn-grp">
+        <a class="all" href="#">All</a>
+        <a class="beverages" href="#beverages">Beverages</a>
+        <a class="maincourse" href="#maincourse">Maincourse</a>
+        <a class="Combos" href="#combos">Combos</a>
+      </div>
+    </section>
+    <!-- best sellers -->
+    <div id="bestseller" class="menu-category">
+      <div class="category-header">
+        <h3>Best Seller</h3>
+      </div>
+      <div class="menu-items menu-cards">
+       
+        <div class="menu-card">
+          <img src="./media/bestseller.svg" alt="Best Seller" />
+          <div class="menucard-content">
+            <h4>Burger</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="./media/bestseller.svg" alt="Best Seller" />
+          <div class="menucard-content">
+            <h4>Best Seller Item 3</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="./media/bestseller.svg" alt="Best Seller" />
+          <div class="menucard-content">
+            <h4>Best Seller Item 4</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="./media/bestseller.svg" alt="Best Seller" />
+          <div class="menucard-content">
+            <h4>Best Seller Item 5</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="./media/bestseller.svg" alt="Best Seller" />
+          <div class="menucard-content">
+            <h4>Best Seller Item 6</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trending -->
+    <div id="trending" class="menu-category">
+      <div class="category-header">
+        <h3>Trending</h3>
+      </div>
+      <div class="menu-items menu-cards">
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending item Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 1</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            <span>$8.99</span>
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 2</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending Item Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 3</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending Item Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 4</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending Item Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 5</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100.svg" alt="Trending Item Image" />
+          <div class="menucard-content">
+            <h4>Trending Item 6</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- starter -->
+    <div id="starter" class="menu-category">
+      <div class="category-header">
+        <h3>Starters</h3>
+      </div>
+      <div class="menu-items menu-cards">
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="Starter Image" />
+          <div class="menucard-content">
+            <h4>Starter Item 1</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            <span>$8.99</span>
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="starter item image" />
+          <div class="menucard-content">
+            <h4>Starter Item 2</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="starter item image" />
+          <div class="menucard-content">
+            <h4>Starter Item 3</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="starter item image" />
+          <div class="menucard-content">
+            <h4>Starter Item 4</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="starter item image" />
+          <div class="menucard-content">
+            <h4>Starter Item 5</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (1).svg" alt="starter item Image" />
+          <div class="menucard-content">
+            <h4>Starter Item 6</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- beverages -->
+    <div id="starter" class="menu-category">
+      <div class="category-header">
+        <h3>Beveraegs</h3>
+      </div>
+      <div class="menu-items menu-cards">
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage Image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 1</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            <span>$8.99</span>
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage item image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 2</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage item image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 3</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage item image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 4</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage item image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 5</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (3).svg" alt="Beverage item Image" />
+          <div class="menucard-content">
+            <h4>Beverage Item 6</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main courses -->
+    <div id="maincourse" class="menu-category">
+      <div class="category-header">
+        <h3>Main Courses</h3>
+      </div>
+      <div class="menu-items menu-cards">
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="Main courses Image" />
+          <div class="menucard-content">
+            <h4>Main Courses Item 1</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            <span>$8.99</span>
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="Maincourse item image" />
+          <div class="menucard-content">
+            <h4>Maincourse Item 2</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="Maincourse item image" />
+          <div class="menucard-content">
+            <h4>MainCourse Item 3</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="MainCourse item image" />
+          <div class="menucard-content">
+            <h4>MainCouse Item 4</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="MainCourse item image" />
+          <div class="menucard-content">
+            <h4>MainCourse Item 5</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="media/200x100 (2).svg" alt="Maincourse item Image" />
+          <div class="menucard-content">
+            <h4>MainCourse Item 6</h4>
+            <p>Description of the best seller</p>
+
+            <span
+              >Price:
+              <strike class="strike-price">$10.99</strike>
+            </span>
+
+            $8.99
+            <span style="color: rgb(243, 57, 57); font-size: 13px"
+              >10% off</span
+            >
+          </div>
+          <div class="add-to-cart-button">
+            <button class="cta-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- combos -->
+    <div id="combos" class="menu-category">
+      <div id="category-header">
+        <h3>Combos</h3>
+      </div>
+      <div class="combo-container">
+        <div class="combo-section">
+          <h3>Small</h3>
+
+          <hr />
+          <div class="item">
+            <img src="media/200x100 (5).svg" alt="combo Item1" />
+            <p>Item 1</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (6).svg" alt="combo Item1" />
+            <p>Item 2</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (7).svg" alt="combo Item1" />
+            <p>Item 3</p>
+          </div>
+          <hr />
+          <div class="total">
+            <div class="totalright">
+              <h4>Total</h4>
+              <p>
+                <strike>$30</strike>
+                $25
+              </p>
+            </div>
+            <div class="add-to-cart-btn">
+              <button class="cta-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="combo-section">
+          <h3>Medium</h3>
+
+          <hr />
+          <div class="item">
+            <img src="media/200x100 (5).svg" id ="img" alt="combo Item1" />
+            <p>Item 1</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (6).svg" alt="combo Item1" />
+            <p>Item 2</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (7).svg" alt="combo Item1" />
+            <p>Item 3</p>
+          </div>
+          <hr />
+          <div class="total">
+            <div class="totalright">
+              <h4>Total</h4>
+              <p>
+                <strike>$40</strike>
+                $35
+              </p>
+            </div>
+            <div class="add-to-cart-btn">
+              <button class="cta-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="combo-section">
+          <h3>Large</h3>
+
+          <hr />
+          <div class="item">
+            <img src="media/200x100 (5).svg" alt="combo Item1" />
+            <p>Item 1</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (6).svg" alt="combo Item1" />
+            <p>Item 2</p>
+          </div>
+          <div class="item">
+            <img src="media/200x100 (7).svg" alt="combo Item1" />
+            <p>Item 3</p>
+          </div>
+          <hr />
+          <div class="total">
+            <div class="totalright">
+              <h4>Total</h4>
+              <p>
+                <strike>$50</strike>
+                $45
+              </p>
+            </div>
+            <div class="add-to-cart-btn">
+              <button class="cta-btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <!-- logo section -->
+        <div class="footer-section logo-section">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/007/578/826/non_2x/online-shop-logo-happy-shop-logo-design-vector.jpg"
+            alt="Shop Logo"
+            class="footer-logo"
+          />
+        </div>
+        <div class="footer-section links-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html#menu">Our menu</a></li>
+            <li><a href="index.html#offers">Our offers</a></li>
+            <li><a href="index.html#about">Know what we have acheived</a></li>
+          </ul>
+        </div>
+
+        <!-- social $ subscripiton section -->
+        <div class="footer-section social-subscribe">
+          <h3>Wanna Get Updated with Our Exciting Offers?</h3>
+          <div class="social-links">
+            <p>Follow us on:</p>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+          <hr />
+          <div class="subscribe-form">
+            <input
+              type="email"
+              placeholder="Subscribe for daily exciting offers"
+            />
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          <a href="#">Terms &amp; Conditions</a>|
+          <a href="#">Privacy Policy</a>|
+          <a href="#">All Rights Reserved</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="menuSearch.js">
+
+</script>
